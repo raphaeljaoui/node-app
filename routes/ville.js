@@ -3,6 +3,10 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/ville', function(req, res, next) {
+  res.render('index', { title: 'test' });
+});
+
+router.post('/', function(req, res, next) {
   res.render('ville', { nom_ville: req.body.nom_ville });
 });
 
