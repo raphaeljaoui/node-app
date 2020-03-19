@@ -7,15 +7,12 @@
   <body>
     <h1>{{ title }}</h1>
     <p>Welcome to {{ title }}</p>
-    <form action="" method="get" class="nom_ville">
-  <div class="form-example">
-    <label for="nom_ville">Enter your ville: </label>
-    <input type="text" name="nom_ville" id="nom_ville" required>
-  </div>
-  <div class="form-example">
-    <input type="submit" value="Subscribe!">
-  </div>
-</form>
+
+    <form action="/ville" method="post">
+      <label>Nom ville : </label>
+      <input type="text" name="nom_ville" value="">
+      <input type="submit" value="GO">
+    </form>
 
   </body>
 </html>
